@@ -1,0 +1,52 @@
+\hypertarget{drv__lager_8c_source}{}\doxysection{drv\+\_\+lager.\+c}
+\label{drv__lager_8c_source}\index{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv\_lager.c@{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv\_lager.c}}
+\mbox{\hyperlink{drv__lager_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00010}00010 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{board_8h}{board.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00011}00011 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00012}00012 \textcolor{comment}{/* Static Functions */}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00013}00013 \textcolor{keyword}{static} \textcolor{keywordtype}{void} lagerWriteByte(uint8\_t \mbox{\hyperlink{drv__serial_8c_a0523c05685d59544dca911cb6a3db77d}{ch}});}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00014}00014 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00019}00019 \textcolor{keywordtype}{void}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00020}\mbox{\hyperlink{drv__lager_8c_a681f3fc565ad5149254493d603cbf97b}{00020}} \mbox{\hyperlink{drv__lager_8c_a681f3fc565ad5149254493d603cbf97b}{lagerInit}}(\textcolor{keywordtype}{void})}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00021}00021 \{}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00022}00022     \textcolor{comment}{/*}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00023}00023 \textcolor{comment}{     * PC6 -\/ TX6}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00024}00024 \textcolor{comment}{     * PC7 -\/ RX6}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00025}00025 \textcolor{comment}{     */}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00026}00026     RCC-\/>DCKCFGR2   \&= \string~RCC\_DCKCFGR2\_USART6SEL;}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00027}00027     RCC-\/>DCKCFGR2   |= RCC\_DCKCFGR2\_USART6SEL\_0;        \textcolor{comment}{// choose SysClk (216MHz) as clock source}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00028}00028 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00029}00029     RCC-\/>AHB1ENR    |= RCC\_AHB1ENR\_GPIOCEN;}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00030}00030     RCC-\/>APB2ENR    |= RCC\_APB2ENR\_USART6EN;                        \textcolor{comment}{// enable the clock for UART5}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00031}00031 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00032}00032     GPIOC-\/>AFR[0] |= (0x8 << (4 * 6U));                         \textcolor{comment}{// set pin A2 as alternate function}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00033}00033     GPIOC-\/>AFR[0] |= (0x8 << (4 * 7U));                         \textcolor{comment}{// set pin A2 as alternate function}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00034}00034 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00035}00035     GPIOC-\/>MODER \&= \string~(GPIO\_MODER\_MODER6);}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00036}00036     GPIOC-\/>MODER \&= \string~(GPIO\_MODER\_MODER7);}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00037}00037     GPIOC-\/>MODER |= GPIO\_MODER\_MODER6\_1;                        \textcolor{comment}{// set PC12 as alternate function}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00038}00038     GPIOC-\/>MODER |= GPIO\_MODER\_MODER7\_1;                        \textcolor{comment}{// set PD2 as alternate function}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00040}00040     USART6-\/>BRR = 0x6C;                                         \textcolor{comment}{// set baud rate to 2000000}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00041}00041     USART6-\/>CR1 |= USART\_CR1\_TE | USART\_CR1\_UE;     \textcolor{comment}{// enable the receiver, transmitter, and USART}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00042}00042 \}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00043}00043 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00049}00049 \textcolor{keywordtype}{void}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00050}\mbox{\hyperlink{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}{00050}} \mbox{\hyperlink{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}{lagerWriteLog}}(uint8\_t *\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}})}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00051}00051 \{}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00052}00052     \textcolor{keywordflow}{for}(uint8\_t i = 0; i < \textcolor{keyword}{sizeof}(\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}}); i++)}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00053}00053     \{}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00054}00054         lagerWriteByte(\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}}[i]);}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00055}00055     \}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00056}00056 \}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00057}00057 }
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00063}00063 \textcolor{keyword}{static} \textcolor{keywordtype}{void}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00064}00064 lagerWriteByte(uint8\_t \mbox{\hyperlink{drv__serial_8c_a0523c05685d59544dca911cb6a3db77d}{ch}})}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00065}00065 \{}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00066}00066     \textcolor{keywordflow}{while} (!(USART6-\/>ISR \& USART\_ISR\_TXE))\{\}    \textcolor{comment}{// waits for TX buffer to become empty}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00067}00067     USART6-\/>TDR = \mbox{\hyperlink{drv__serial_8c_a0523c05685d59544dca911cb6a3db77d}{ch}};                         \textcolor{comment}{// transfers the value of the data register into ch}}
+\DoxyCodeLine{\Hypertarget{drv__lager_8c_source_l00068}00068 \}}
+
+\end{DoxyCode}

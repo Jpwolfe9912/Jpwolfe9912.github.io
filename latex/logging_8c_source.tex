@@ -1,0 +1,112 @@
+\hypertarget{logging_8c_source}{}\doxysection{logging.\+c}
+\label{logging_8c_source}\index{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/logging.c@{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/logging.c}}
+\mbox{\hyperlink{logging_8c}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00001}00001 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00009}00009 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{board_8h}{board.h}}"{}}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00010}00010 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00011}\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{00011}} uint8\_t *\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}};}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00012}00012 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00018}00018 \textcolor{keywordtype}{void}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00019}\mbox{\hyperlink{logging_8c_a0e73848028d376086bd2f9cf3a919029}{00019}} \mbox{\hyperlink{logging_8c_a0e73848028d376086bd2f9cf3a919029}{printLog}}(\mbox{\hyperlink{logging_8h_a3d37bb864e1a8acc5ee978f4cf398ab3}{logs\_t}} logType)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00020}00020 \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00021}00021 \textcolor{preprocessor}{\#ifdef OPENLAGER}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00022}00022     \textcolor{keywordtype}{float} log[10];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00023}00023     \mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}} = (uint8\_t*)\&log;}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00024}00024 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00025}00025     log[0] = logType;}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00026}00026 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00027}00027     \textcolor{keywordflow}{if}(logType < 3)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00028}00028     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00029}00029         log[1] = \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}};}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00030}00030         log[2] = \mbox{\hyperlink{process__commands_8c_abdda914a8c6ac0445832f7dbf4f37286}{mode}};}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00031}00031         log[3] = \mbox{\hyperlink{compute__axis__commands_8c_ac6595ac6fa25e26be6455e68cc6cdea9}{rateCmd}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00032}00032         log[4] = \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00033}00033         log[5] = \mbox{\hyperlink{compute__axis__commands_8c_ab77481ff9ad18ebb1f89ab1946ca7dae}{ratePID}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00034}00034         log[6] = \mbox{\hyperlink{compute__axis__commands_8c_aa2d7eed0bc462ac7393d0def9c484b5e}{attCmd}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00035}00035         log[7] = \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00036}00036         log[8] = \mbox{\hyperlink{compute__axis__commands_8c_ab07bd323d95ccecc4ad892c23b921712}{attPID}}[logType];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00037}00037     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00038}00038 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00039}00039 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00040}00040     \textcolor{keywordflow}{if} (logType == 3)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00041}00041     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00042}00042         log[1] = \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}};}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00043}00043         log[2] = \mbox{\hyperlink{process__commands_8c_abdda914a8c6ac0445832f7dbf4f37286}{mode}};}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00044}00044         log[3] = \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[\mbox{\hyperlink{motors_8h_a52d59931063c311b3db496e3dd723b9ea492d91d9c76773912f54454e732c6a28}{MOTOR1}}];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00045}00045         log[4] = \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[\mbox{\hyperlink{motors_8h_a52d59931063c311b3db496e3dd723b9eae45e87aca199d3774bfb21480eb7d934}{MOTOR2}}];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00046}00046         log[5] = \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[\mbox{\hyperlink{motors_8h_a52d59931063c311b3db496e3dd723b9ea5cc186b7500e7c6596d569dc8a39e7e3}{MOTOR3}}];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00047}00047         log[6] = \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[\mbox{\hyperlink{motors_8h_a52d59931063c311b3db496e3dd723b9ea2d2925398a9b00e63e7c37a1c710e02f}{MOTOR4}}];}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00048}00048     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00049}00049     \mbox{\hyperlink{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}{lagerWriteLog}}(\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{pLog}});}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00050}00050 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00051}00051 \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00052}00052     \textcolor{keywordflow}{if} (logType == 1)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00053}00053     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00054}00054         \textcolor{comment}{// Roll Loop}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00055}00055         printf(\textcolor{stringliteral}{"{}1,\%9.4f,\%1d,\%9.4f,\%9.4f,\%9.4f,\%9.4f,\%9.4f,\%9.4f\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00056}00056                 \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00057}00057                 \mbox{\hyperlink{process__commands_8c_abdda914a8c6ac0445832f7dbf4f37286}{mode}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00058}00058                 \mbox{\hyperlink{compute__axis__commands_8c_ac6595ac6fa25e26be6455e68cc6cdea9}{rateCmd}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00059}00059                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00060}00060                 \mbox{\hyperlink{compute__axis__commands_8c_ab77481ff9ad18ebb1f89ab1946ca7dae}{ratePID}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00061}00061                 \mbox{\hyperlink{compute__axis__commands_8c_aa2d7eed0bc462ac7393d0def9c484b5e}{attCmd}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00062}00062                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00063}00063                 \mbox{\hyperlink{compute__axis__commands_8c_ab07bd323d95ccecc4ad892c23b921712}{attPID}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}]);}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00064}00064     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00065}00065 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00066}00066     \textcolor{keywordflow}{if} (logType == 2)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00067}00067     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00068}00068         \textcolor{comment}{// Pitch Loop}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00069}00069         printf(\textcolor{stringliteral}{"{}2,\%9.4f,\%1d,\%9.4f,\%9.4f,\%9.4f,\%9.4f,\%9.4f,\%9.4f\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00070}00070                 \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00071}00071                 \mbox{\hyperlink{process__commands_8c_abdda914a8c6ac0445832f7dbf4f37286}{mode}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00072}00072                 \mbox{\hyperlink{compute__axis__commands_8c_ac6595ac6fa25e26be6455e68cc6cdea9}{rateCmd}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00073}00073                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00074}00074                 \mbox{\hyperlink{compute__axis__commands_8c_ab77481ff9ad18ebb1f89ab1946ca7dae}{ratePID}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00075}00075                 \mbox{\hyperlink{compute__axis__commands_8c_aa2d7eed0bc462ac7393d0def9c484b5e}{attCmd}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00076}00076                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00077}00077                 \mbox{\hyperlink{compute__axis__commands_8c_ab07bd323d95ccecc4ad892c23b921712}{attPID}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}]);}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00078}00078     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00079}00079 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00080}00080     \textcolor{keywordflow}{if} (logType == 3)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00081}00081     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00082}00082         \textcolor{comment}{// Yaw Loop}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00083}00083         printf(\textcolor{stringliteral}{"{}2,\%9.4f,\%1d,\%9.4f,\%9.4f,\%9.4f\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00084}00084                 \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00085}00085                 \mbox{\hyperlink{process__commands_8c_abdda914a8c6ac0445832f7dbf4f37286}{mode}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00086}00086                 \mbox{\hyperlink{compute__axis__commands_8c_ac6595ac6fa25e26be6455e68cc6cdea9}{rateCmd}}[\mbox{\hyperlink{_autodrone32_8h_ac71b1e54b98dc1031873048bc61d0438}{YAW}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00087}00087                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_ac71b1e54b98dc1031873048bc61d0438}{YAW}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00088}00088                 \mbox{\hyperlink{compute__axis__commands_8c_ab77481ff9ad18ebb1f89ab1946ca7dae}{ratePID}}[\mbox{\hyperlink{_autodrone32_8h_ac71b1e54b98dc1031873048bc61d0438}{YAW}}]);}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00089}00089     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00090}00090 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00091}00091     \textcolor{keywordflow}{if} (logType == 4)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00092}00092     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00093}00093         \textcolor{comment}{// Sensors}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00094}00094         printf(\textcolor{stringliteral}{"{}3,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\%8.4f,\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00095}00095                 \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00096}00096                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a300c0da2a8ccecb8d188fa5d988b9244}{accel500Hz}}[\mbox{\hyperlink{_autodrone32_8h_a5a899b303c8a64568d3744e2fd91d580}{XAXIS}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00097}00097                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a300c0da2a8ccecb8d188fa5d988b9244}{accel500Hz}}[\mbox{\hyperlink{_autodrone32_8h_a3e95c71037ba6d8d7a16e4501e15cefe}{YAXIS}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00098}00098                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a300c0da2a8ccecb8d188fa5d988b9244}{accel500Hz}}[\mbox{\hyperlink{_autodrone32_8h_aff84eb8d433e63ee955ed2bd48d6df77}{ZAXIS}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00099}00099                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00100}00100                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00101}00101                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a096936016bc19288738dbf774d57d563}{gyro500Hz}}[\mbox{\hyperlink{_autodrone32_8h_ac71b1e54b98dc1031873048bc61d0438}{YAW}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00102}00102                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[\mbox{\hyperlink{_autodrone32_8h_af902416f65138704a180dbae2dc9d8f2}{ROLL}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00103}00103                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[\mbox{\hyperlink{_autodrone32_8h_acd633835a520a62245ec6cfeb6d00e97}{PITCH}}],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00104}00104                 \mbox{\hyperlink{_autodrone32_8h_ae98e6f5c865af95578862f633a30b769}{sensors}}.\mbox{\hyperlink{structsensors__t_a648770241f13383e5c763d3d137e017e}{attitude500Hz}}[\mbox{\hyperlink{_autodrone32_8h_ac71b1e54b98dc1031873048bc61d0438}{YAW}}]);}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00105}00105 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00106}00106     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00107}00107 }
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00108}00108     \textcolor{keywordflow}{if} (logType == 5)}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00109}00109     \{}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00110}00110         printf(\textcolor{stringliteral}{"{}4,\%9.4f,\%u,\%u,\%u,\%u,\(\backslash\)n"{}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00111}00111                 \mbox{\hyperlink{battery_8c_a855408c36f973de1305b920c1e2d7125}{battVoltage}},}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00112}00112                 \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[0],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00113}00113                 \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[1],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00114}00114                 \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[2],}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00115}00115                 \mbox{\hyperlink{motors_8c_ac96647f4976d16e8a084441dcfd5dcf8}{motor\_value}}[3]);}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00116}00116     \}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00117}00117 \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{\Hypertarget{logging_8c_source_l00118}00118 \}}
+
+\end{DoxyCode}

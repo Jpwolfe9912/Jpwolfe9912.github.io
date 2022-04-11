@@ -1,0 +1,72 @@
+\hypertarget{drv__lager_8c}{}\doxysection{/\+Users/jeremywolfe/\+Documents/\+STM32\+Cube\+IDE/\+Autodrone32/\+Src/drv/drv\+\_\+lager.c File Reference}
+\label{drv__lager_8c}\index{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv\_lager.c@{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv\_lager.c}}
+
+
+This file initializes the UART and provides functions for writing to the Open\+Lager.  
+
+
+{\ttfamily \#include \char`\"{}board.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{drv__lager_8c_a681f3fc565ad5149254493d603cbf97b}{lager\+Init}} (void)
+\begin{DoxyCompactList}\small\item\em Initializes the low level uart registers in order to use the lager. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}{lager\+Write\+Log}} (uint8\+\_\+t $\ast$\mbox{\hyperlink{logging_8c_a83f3efae1c61e2a25f3458311c9f5a44}{p\+Log}})
+\begin{DoxyCompactList}\small\item\em Loops through the log. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file initializes the UART and provides functions for writing to the Open\+Lager. 
+
+\begin{DoxyAuthor}{Author}
+Jeremy Wolfe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+07 APR 2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{drv__lager_8c_source}{drv\+\_\+lager.\+c}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{drv__lager_8c_a681f3fc565ad5149254493d603cbf97b}\label{drv__lager_8c_a681f3fc565ad5149254493d603cbf97b}} 
+\index{drv\_lager.c@{drv\_lager.c}!lagerInit@{lagerInit}}
+\index{lagerInit@{lagerInit}!drv\_lager.c@{drv\_lager.c}}
+\doxysubsubsection{\texorpdfstring{lagerInit()}{lagerInit()}}
+{\footnotesize\ttfamily void lager\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Initializes the low level uart registers in order to use the lager. 
+
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{drv__lager_8c_source_l00020}{20}} of file \mbox{\hyperlink{drv__lager_8c_source}{drv\+\_\+lager.\+c}}.
+
+\mbox{\Hypertarget{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}\label{drv__lager_8c_afa7d3fee5d1c8016a53873a22c966211}} 
+\index{drv\_lager.c@{drv\_lager.c}!lagerWriteLog@{lagerWriteLog}}
+\index{lagerWriteLog@{lagerWriteLog}!drv\_lager.c@{drv\_lager.c}}
+\doxysubsubsection{\texorpdfstring{lagerWriteLog()}{lagerWriteLog()}}
+{\footnotesize\ttfamily void lager\+Write\+Log (\begin{DoxyParamCaption}\item[{uint8\+\_\+t $\ast$}]{p\+Log }\end{DoxyParamCaption})}
+
+
+
+Loops through the log. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em ch} & The character to send. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{drv__lager_8c_source_l00050}{50}} of file \mbox{\hyperlink{drv__lager_8c_source}{drv\+\_\+lager.\+c}}.
+

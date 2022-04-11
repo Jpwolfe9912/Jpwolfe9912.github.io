@@ -1,0 +1,163 @@
+\hypertarget{config_8h}{}\doxysection{/\+Users/jeremywolfe/\+Documents/\+STM32\+Cube\+IDE/\+Autodrone32/\+Src/config.h File Reference}
+\label{config_8h}\index{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/config.h@{/Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/config.h}}
+
+
+This file configures the EEPROM settings of the flight controller.  
+
+
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{config_8h_ac3b89e8ed612ac7a29df09c9bb84e29e}{FLASH\+\_\+\+WRITE\+\_\+\+EEPROM\+\_\+\+ADDR}}~0x08040000
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \mbox{\hyperlink{config_8h_adf764cbdea00d65edcd07bb9953ad2b7a64b8f8f086c4c5f398b62edbd3741188}{eeprom\+Config\+NUMWORD}} = sizeof(eeprom\+Config\+\_\+t)/sizeof(uint32\+\_\+t)
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{config_8h_a0ccfb42ea0b2eac66bd3773b34fd6b96}{parse\+Rc\+Channels}} (const char $\ast$input)
+\item 
+uint32\+\_\+t \mbox{\hyperlink{config_8h_abb54b6c03c4ecca3c9cf43638135a884}{crc32b\+EEPROM}} (\mbox{\hyperlink{structeeprom_config__t}{eeprom\+Config\+\_\+t}} $\ast$e, int include\+CRCAt\+End)
+\item 
+void \mbox{\hyperlink{config_8h_ad7e2897a0fa02e667ade878c31a4a8af}{read\+EEPROM}} (void)
+\item 
+HAL\+\_\+\+Status\+Type\+Def \mbox{\hyperlink{config_8h_a01d96f67c779d72790d3a1c05f014b18}{write\+EEPROM}} (void)
+\item 
+void \mbox{\hyperlink{config_8h_ad11ec57672a83816f90dd713cd28a65d}{check\+First\+Time}} (bool eeprom\+Reset)
+\begin{DoxyCompactList}\small\item\em Sets all the default config values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \mbox{\hyperlink{config_8h_af9feeef7c6444779d523be127659986e}{rc\+Channel\+Letters}} \mbox{[}12\mbox{]}
+\item 
+\mbox{\hyperlink{_autodrone32_8h_a3d5a901a753342ccfc67d9706af13165}{semaphore\+\_\+t}} \mbox{\hyperlink{config_8h_a1d43665369dd61e53f12b84e3f71c1de}{eeprom\+Changed}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This file configures the EEPROM settings of the flight controller. 
+
+\begin{DoxyAuthor}{Author}
+Jeremy Wolfe 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+03 MAR 2022 
+\end{DoxyDate}
+
+
+Definition in file \mbox{\hyperlink{config_8h_source}{config.\+h}}.
+
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{config_8h_ac3b89e8ed612ac7a29df09c9bb84e29e}\label{config_8h_ac3b89e8ed612ac7a29df09c9bb84e29e}} 
+\index{config.h@{config.h}!FLASH\_WRITE\_EEPROM\_ADDR@{FLASH\_WRITE\_EEPROM\_ADDR}}
+\index{FLASH\_WRITE\_EEPROM\_ADDR@{FLASH\_WRITE\_EEPROM\_ADDR}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{FLASH\_WRITE\_EEPROM\_ADDR}{FLASH\_WRITE\_EEPROM\_ADDR}}
+{\footnotesize\ttfamily \#define FLASH\+\_\+\+WRITE\+\_\+\+EEPROM\+\_\+\+ADDR~0x08040000}
+
+
+
+Definition at line \mbox{\hyperlink{config_8h_source_l00016}{16}} of file \mbox{\hyperlink{config_8h_source}{config.\+h}}.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{config_8h_adf764cbdea00d65edcd07bb9953ad2b7}\label{config_8h_adf764cbdea00d65edcd07bb9953ad2b7}} 
+\doxysubsubsection{\texorpdfstring{anonymous enum}{anonymous enum}}
+{\footnotesize\ttfamily anonymous enum}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{eepromConfigNUMWORD@{eepromConfigNUMWORD}!config.h@{config.h}}\index{config.h@{config.h}!eepromConfigNUMWORD@{eepromConfigNUMWORD}}}\mbox{\Hypertarget{config_8h_adf764cbdea00d65edcd07bb9953ad2b7a64b8f8f086c4c5f398b62edbd3741188}\label{config_8h_adf764cbdea00d65edcd07bb9953ad2b7a64b8f8f086c4c5f398b62edbd3741188}} 
+eeprom\+Config\+NUMWORD&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line \mbox{\hyperlink{config_8h_source_l00019}{19}} of file \mbox{\hyperlink{config_8h_source}{config.\+h}}.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{config_8h_ad11ec57672a83816f90dd713cd28a65d}\label{config_8h_ad11ec57672a83816f90dd713cd28a65d}} 
+\index{config.h@{config.h}!checkFirstTime@{checkFirstTime}}
+\index{checkFirstTime@{checkFirstTime}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{checkFirstTime()}{checkFirstTime()}}
+{\footnotesize\ttfamily void check\+First\+Time (\begin{DoxyParamCaption}\item[{bool}]{eeprom\+Reset }\end{DoxyParamCaption})}
+
+
+
+Sets all the default config values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em bool} & eeprom\+Reset Whether or not you want to write config values to EEPROM. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Void. 
+\end{DoxyReturn}
+
+
+Definition at line \mbox{\hyperlink{config_8c_source_l00086}{86}} of file \mbox{\hyperlink{config_8c_source}{config.\+c}}.
+
+\mbox{\Hypertarget{config_8h_abb54b6c03c4ecca3c9cf43638135a884}\label{config_8h_abb54b6c03c4ecca3c9cf43638135a884}} 
+\index{config.h@{config.h}!crc32bEEPROM@{crc32bEEPROM}}
+\index{crc32bEEPROM@{crc32bEEPROM}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{crc32bEEPROM()}{crc32bEEPROM()}}
+{\footnotesize\ttfamily uint32\+\_\+t crc32b\+EEPROM (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structeeprom_config__t}{eeprom\+Config\+\_\+t}} $\ast$}]{e,  }\item[{int}]{include\+CRCAt\+End }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{config_8h_a0ccfb42ea0b2eac66bd3773b34fd6b96}\label{config_8h_a0ccfb42ea0b2eac66bd3773b34fd6b96}} 
+\index{config.h@{config.h}!parseRcChannels@{parseRcChannels}}
+\index{parseRcChannels@{parseRcChannels}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{parseRcChannels()}{parseRcChannels()}}
+{\footnotesize\ttfamily void parse\+Rc\+Channels (\begin{DoxyParamCaption}\item[{const char $\ast$}]{input }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{config_8h_ad7e2897a0fa02e667ade878c31a4a8af}\label{config_8h_ad7e2897a0fa02e667ade878c31a4a8af}} 
+\index{config.h@{config.h}!readEEPROM@{readEEPROM}}
+\index{readEEPROM@{readEEPROM}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{readEEPROM()}{readEEPROM()}}
+{\footnotesize\ttfamily void read\+EEPROM (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{config_8c_source_l00021}{21}} of file \mbox{\hyperlink{config_8c_source}{config.\+c}}.
+
+\mbox{\Hypertarget{config_8h_a01d96f67c779d72790d3a1c05f014b18}\label{config_8h_a01d96f67c779d72790d3a1c05f014b18}} 
+\index{config.h@{config.h}!writeEEPROM@{writeEEPROM}}
+\index{writeEEPROM@{writeEEPROM}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{writeEEPROM()}{writeEEPROM()}}
+{\footnotesize\ttfamily HAL\+\_\+\+Status\+Type\+Def write\+EEPROM (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Definition at line \mbox{\hyperlink{config_8c_source_l00031}{31}} of file \mbox{\hyperlink{config_8c_source}{config.\+c}}.
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{config_8h_a1d43665369dd61e53f12b84e3f71c1de}\label{config_8h_a1d43665369dd61e53f12b84e3f71c1de}} 
+\index{config.h@{config.h}!eepromChanged@{eepromChanged}}
+\index{eepromChanged@{eepromChanged}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{eepromChanged}{eepromChanged}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_autodrone32_8h_a3d5a901a753342ccfc67d9706af13165}{semaphore\+\_\+t}} eeprom\+Changed\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{config_8c_source_l00016}{16}} of file \mbox{\hyperlink{config_8c_source}{config.\+c}}.
+
+\mbox{\Hypertarget{config_8h_af9feeef7c6444779d523be127659986e}\label{config_8h_af9feeef7c6444779d523be127659986e}} 
+\index{config.h@{config.h}!rcChannelLetters@{rcChannelLetters}}
+\index{rcChannelLetters@{rcChannelLetters}!config.h@{config.h}}
+\doxysubsubsection{\texorpdfstring{rcChannelLetters}{rcChannelLetters}}
+{\footnotesize\ttfamily const char rc\+Channel\+Letters\mbox{[}12\mbox{]}\hspace{0.3cm}{\ttfamily [extern]}}
+
+
+
+Definition at line \mbox{\hyperlink{config_8c_source_l00014}{14}} of file \mbox{\hyperlink{config_8c_source}{config.\+c}}.
+
