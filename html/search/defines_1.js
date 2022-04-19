@@ -25,13 +25,5 @@ var searchData=
   ['bits_5ffs_5f4g_22',['BITS_FS_4G',['../mpu6000_8h.html#ae6fec98ad2a190e9b0051ad1f9a41b9a',1,'mpu6000.h']]],
   ['bits_5ffs_5f500dps_23',['BITS_FS_500DPS',['../mpu6000_8h.html#adf6b50b2041b449c5883c250c47f09e2',1,'mpu6000.h']]],
   ['bits_5ffs_5f8g_24',['BITS_FS_8G',['../mpu6000_8h.html#abdd09cc74774efdca365a8878aa5473c',1,'mpu6000.h']]],
-  ['bits_5ffs_5fmask_25',['BITS_FS_MASK',['../mpu6000_8h.html#afca5f862287194d1e94e7b220e483c47',1,'mpu6000.h']]],
-  ['buf_5fis_5fvalid_26',['BUF_IS_VALID',['../drv__lwrb_8c.html#aff2830b6e15344aa58a45e55f25b6db9',1,'drv_lwrb.c']]],
-  ['buf_5fmagic1_27',['BUF_MAGIC1',['../drv__lwrb_8c.html#abe74e5aa24961ae3389889264d1723e1',1,'drv_lwrb.c']]],
-  ['buf_5fmagic2_28',['BUF_MAGIC2',['../drv__lwrb_8c.html#af6cd8b6292064c38c7917a9a95bcbb9f',1,'drv_lwrb.c']]],
-  ['buf_5fmax_29',['BUF_MAX',['../drv__lwrb_8c.html#a6c8e767a96387039c5b3602d61285340',1,'drv_lwrb.c']]],
-  ['buf_5fmemcpy_30',['BUF_MEMCPY',['../drv__lwrb_8c.html#a9f15e8de93f8a959775729bfc4633c68',1,'drv_lwrb.c']]],
-  ['buf_5fmemset_31',['BUF_MEMSET',['../drv__lwrb_8c.html#a6ab28cf70bc2c33340ab9fe19163c7a6',1,'drv_lwrb.c']]],
-  ['buf_5fmin_32',['BUF_MIN',['../drv__lwrb_8c.html#a0a1e5b2d807776abf1104d37f8141099',1,'drv_lwrb.c']]],
-  ['buf_5fsend_5fevt_33',['BUF_SEND_EVT',['../drv__lwrb_8c.html#ae6b44b4e80efd02f69db0693bf049a69',1,'drv_lwrb.c']]]
+  ['bits_5ffs_5fmask_25',['BITS_FS_MASK',['../mpu6000_8h.html#afca5f862287194d1e94e7b220e483c47',1,'mpu6000.h']]]
 ];

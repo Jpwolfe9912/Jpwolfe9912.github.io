@@ -10,8 +10,6 @@ var dir_10e0304ec104feec7862f4fa7fe2f1e8 =
     [ "drv_dshot.h", "drv__dshot_8h.html", "drv__dshot_8h" ],
     [ "drv_led.c", "drv__led_8c.html", "drv__led_8c" ],
     [ "drv_led.h", "drv__led_8h.html", "drv__led_8h" ],
-    [ "drv_lwrb.c", "drv__lwrb_8c.html", "drv__lwrb_8c" ],
-    [ "drv_lwrb.h", "drv__lwrb_8h.html", "drv__lwrb_8h" ],
     [ "drv_rcc.c", "drv__rcc_8c.html", "drv__rcc_8c" ],
     [ "drv_rcc.h", "drv__rcc_8h.html", "drv__rcc_8h" ],
     [ "drv_serial.c", "drv__serial_8c.html", "drv__serial_8c" ],

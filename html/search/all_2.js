@@ -13,7 +13,7 @@ var searchData=
   ['beep3_10',['BEEP3',['../motors_8h.html#a8c3dcbaa91975f68d0a9cd30baf9e3a2a6ffd0669b4c922e71ee6a4f32ffe16f5',1,'motors.h']]],
   ['beep4_11',['BEEP4',['../motors_8h.html#a8c3dcbaa91975f68d0a9cd30baf9e3a2adbb93f89e3321d1068cc7a433e4e5ea4',1,'motors.h']]],
   ['beep5_12',['BEEP5',['../motors_8h.html#a8c3dcbaa91975f68d0a9cd30baf9e3a2a5eb07eca12eaa5f51f8e7359937c7f2c',1,'motors.h']]],
-  ['beta_13',['beta',['../madgwick_8c.html#aa773d9a6c0ccefaa0fc9ab66fec68ec1',1,'beta():&#160;madgwick.c'],['../madgwick_8h.html#aa773d9a6c0ccefaa0fc9ab66fec68ec1',1,'beta():&#160;madgwick.c']]],
+  ['beta_13',['beta',['../madgwick_8h.html#aa773d9a6c0ccefaa0fc9ab66fec68ec1',1,'beta():&#160;madgwick.c'],['../madgwick_8c.html#aa773d9a6c0ccefaa0fc9ab66fec68ec1',1,'beta():&#160;madgwick.c']]],
   ['betadef_14',['betaDef',['../madgwick_8h.html#ab51f159bf643224a2bc1d7027fb00d62',1,'madgwick.h']]],
   ['bf_5fe_15',['bf_e',['../drv__color_8h.html#a3754b48ed3011b2b338eb948daa47cd7',1,'drv_color.h']]],
   ['bit_5fh_5freset_16',['BIT_H_RESET',['../mpu6000_8h.html#a30a2f1f788faf9cbdeec0b2bbb39fb8c',1,'mpu6000.h']]],
@@ -44,15 +44,6 @@ var searchData=
   ['black_41',['BLACK',['../drv__color_8h.html#a0a204139fa728b63f637526a181ca979af77fb67151d0c18d397069ad8c271ba3',1,'drv_color.h']]],
   ['blue_42',['BLUE',['../drv__color_8h.html#a0a204139fa728b63f637526a181ca979a35d6719cb4d7577c031b3d79057a1b79',1,'drv_color.h']]],
   ['board_2eh_43',['board.h',['../board_8h.html',1,'']]],
-  ['buf_5fis_5fvalid_44',['BUF_IS_VALID',['../drv__lwrb_8c.html#aff2830b6e15344aa58a45e55f25b6db9',1,'drv_lwrb.c']]],
-  ['buf_5fmagic1_45',['BUF_MAGIC1',['../drv__lwrb_8c.html#abe74e5aa24961ae3389889264d1723e1',1,'drv_lwrb.c']]],
-  ['buf_5fmagic2_46',['BUF_MAGIC2',['../drv__lwrb_8c.html#af6cd8b6292064c38c7917a9a95bcbb9f',1,'drv_lwrb.c']]],
-  ['buf_5fmax_47',['BUF_MAX',['../drv__lwrb_8c.html#a6c8e767a96387039c5b3602d61285340',1,'drv_lwrb.c']]],
-  ['buf_5fmemcpy_48',['BUF_MEMCPY',['../drv__lwrb_8c.html#a9f15e8de93f8a959775729bfc4633c68',1,'drv_lwrb.c']]],
-  ['buf_5fmemset_49',['BUF_MEMSET',['../drv__lwrb_8c.html#a6ab28cf70bc2c33340ab9fe19163c7a6',1,'drv_lwrb.c']]],
-  ['buf_5fmin_50',['BUF_MIN',['../drv__lwrb_8c.html#a0a1e5b2d807776abf1104d37f8141099',1,'drv_lwrb.c']]],
-  ['buf_5fsend_5fevt_51',['BUF_SEND_EVT',['../drv__lwrb_8c.html#ae6b44b4e80efd02f69db0693bf049a69',1,'drv_lwrb.c']]],
-  ['buff_52',['buff',['../structlwrb.html#a8b212742c92a124f2eb4a244acc19f7c',1,'lwrb']]],
-  ['busfault_5fhandler_53',['BusFault_Handler',['../stm32f7xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f7xx_it.c'],['../stm32f7xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f7xx_it.c']]],
-  ['bytes_54',['bytes',['../unionuint32and_uint8__t.html#aac9cc4cbc93c66d4b3e0e9e037695d5a',1,'uint32andUint8_t::bytes()'],['../unionint16and_uint8__t.html#a46e4c05d20a047ec169f60d3167e912e',1,'int16andUint8_t::bytes()'],['../unionint32and_uint8__t.html#aac9cc4cbc93c66d4b3e0e9e037695d5a',1,'int32andUint8_t::bytes()'],['../unionuint16and_uint8__t.html#a46e4c05d20a047ec169f60d3167e912e',1,'uint16andUint8_t::bytes()']]]
+  ['busfault_5fhandler_44',['BusFault_Handler',['../stm32f7xx__it_8h.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f7xx_it.c'],['../stm32f7xx__it_8c.html#a850cefb17a977292ae5eb4cafa9976c3',1,'BusFault_Handler(void):&#160;stm32f7xx_it.c']]],
+  ['bytes_45',['bytes',['../unionuint32and_uint8__t.html#aac9cc4cbc93c66d4b3e0e9e037695d5a',1,'uint32andUint8_t::bytes()'],['../unionint16and_uint8__t.html#a46e4c05d20a047ec169f60d3167e912e',1,'int16andUint8_t::bytes()'],['../unionint32and_uint8__t.html#aac9cc4cbc93c66d4b3e0e9e037695d5a',1,'int32andUint8_t::bytes()'],['../unionuint16and_uint8__t.html#a46e4c05d20a047ec169f60d3167e912e',1,'uint16andUint8_t::bytes()']]]
 ];
