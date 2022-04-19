@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Autodrone32: /Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv_serial.h File Reference</title>
+<title>Autodrone: /Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/drv/drv_serial.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Autodrone32
+   <div id="projectname">Autodrone
    </div>
-   <div id="projectbrief">This project is a vehicle that has the ability to both fly and drive.</div>
+   <div id="projectbrief">Multi-Domain Vehicle</div>
   </td>
  </tr>
  </tbody>
@@ -102,8 +102,8 @@ Functions</h2></td></tr>
 <tr class="separator:a7a809f2da530d69d77406e05cbd4c007"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab7807d9820ac9ebb4fdbec073beeea69"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv__serial_8h.html#ab7807d9820ac9ebb4fdbec073beeea69">serialRead8</a> (uint8_t *num)</td></tr>
 <tr class="separator:ab7807d9820ac9ebb4fdbec073beeea69"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv__serial_8h.html#ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0">serialReadPID</a> (float *P, float *I, float *D, float *limit, float *integrator, float *filter)</td></tr>
-<tr class="separator:ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4980476d9552cbdce549d7f33e502c91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv__serial_8h.html#a4980476d9552cbdce549d7f33e502c91">serialReadPID</a> (float *P, float *I, float *D)</td></tr>
+<tr class="separator:a4980476d9552cbdce549d7f33e502c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d78b04465ba4c91dd115bb4bf4662eb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="drv__serial_8h.html#a6d78b04465ba4c91dd115bb4bf4662eb">serialWaitFor</a> (char wait)</td></tr>
 <tr class="separator:a6d78b04465ba4c91dd115bb4bf4662eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -112,8 +112,6 @@ Functions</h2></td></tr>
 <p >Based on which device you are using (Nucleo or Autodrone PCB), enable the corresponding Include in the preprocessor</p>
 <dl class="section author"><dt>Author</dt><dd>Jeremy Wolfe </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>23 FEB 2022 </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="drv__serial_8h_source.html">drv_serial.h</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0c569386540e18af22f2d8c74e4f22c3" name="a0c569386540e18af22f2d8c74e4f22c3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0c569386540e18af22f2d8c74e4f22c3">&#9670;&nbsp;</a></span>serialInit()</h2>
@@ -151,8 +149,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0" name="ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7d4cc1cc3bd6bdc2899bff4d2d8aeb0">&#9670;&nbsp;</a></span>serialReadPID()</h2>
+<a id="a4980476d9552cbdce549d7f33e502c91" name="a4980476d9552cbdce549d7f33e502c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4980476d9552cbdce549d7f33e502c91">&#9670;&nbsp;</a></span>serialReadPID()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -173,25 +171,7 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>D</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>limit</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>integrator</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>filter</em>&#160;</td>
+          <td class="paramname"><em>D</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

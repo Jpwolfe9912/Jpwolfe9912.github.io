@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.3"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Autodrone32: /Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/logging.c File Reference</title>
+<title>Autodrone: /Users/jeremywolfe/Documents/STM32CubeIDE/Autodrone32/Src/logging.c File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -25,9 +25,9 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">Autodrone32
+   <div id="projectname">Autodrone
    </div>
-   <div id="projectbrief">This project is a vehicle that has the ability to both fly and drive.</div>
+   <div id="projectbrief">Multi-Domain Vehicle</div>
   </td>
  </tr>
  </tbody>
@@ -93,9 +93,7 @@ $(document).ready(function(){initNavTree('logging_8c.html',''); initResizable();
 <p>This file logs data to the terminal if connected.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="board_8h_source.html">board.h</a>&quot;</code><br />
-</div>
-<p><a href="logging_8c_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
+</div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a0e73848028d376086bd2f9cf3a919029"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a0e73848028d376086bd2f9cf3a919029">printLog</a> (<a class="el" href="logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3">logs_t</a> logType)</td></tr>
@@ -104,15 +102,15 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a83f3efae1c61e2a25f3458311c9f5a44"><td class="memItemLeft" align="right" valign="top">uint8_t *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#a83f3efae1c61e2a25f3458311c9f5a44">pLog</a></td></tr>
-<tr class="separator:a83f3efae1c61e2a25f3458311c9f5a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4c5f7add1a24f29654d0c6f490d18af"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#ad4c5f7add1a24f29654d0c6f490d18af">log_count</a> = 0</td></tr>
+<tr class="separator:ad4c5f7add1a24f29654d0c6f490d18af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad267b2019373072602d62ca95e3a60ad"><td class="memItemLeft" align="right" valign="top">char *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="logging_8c.html#ad267b2019373072602d62ca95e3a60ad">logData</a> = (char*)0x20011000</td></tr>
+<tr class="separator:ad267b2019373072602d62ca95e3a60ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file logs data to the terminal if connected. </p>
 <dl class="section author"><dt>Author</dt><dd>Jeremy Wolfe </dd></dl>
 <dl class="section date"><dt>Date</dt><dd>07 APR 2022 </dd></dl>
-
-<p class="definition">Definition in file <a class="el" href="logging_8c_source.html">logging.c</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
 <a id="a0e73848028d376086bd2f9cf3a919029" name="a0e73848028d376086bd2f9cf3a919029"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0e73848028d376086bd2f9cf3a919029">&#9670;&nbsp;</a></span>printLog()</h2>
@@ -139,24 +137,34 @@ Variables</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Void. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="logging_8c_source.html#l00019">19</a> of file <a class="el" href="logging_8c_source.html">logging.c</a>.</p>
-
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
-<a id="a83f3efae1c61e2a25f3458311c9f5a44" name="a83f3efae1c61e2a25f3458311c9f5a44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83f3efae1c61e2a25f3458311c9f5a44">&#9670;&nbsp;</a></span>pLog</h2>
+<a id="ad4c5f7add1a24f29654d0c6f490d18af" name="ad4c5f7add1a24f29654d0c6f490d18af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4c5f7add1a24f29654d0c6f490d18af">&#9670;&nbsp;</a></span>log_count</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">uint8_t* pLog</td>
+          <td class="memname">uint8_t log_count = 0</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="logging_8c_source.html#l00011">11</a> of file <a class="el" href="logging_8c_source.html">logging.c</a>.</p>
+</div>
+</div>
+<a id="ad267b2019373072602d62ca95e3a60ad" name="ad267b2019373072602d62ca95e3a60ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad267b2019373072602d62ca95e3a60ad">&#9670;&nbsp;</a></span>logData</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">char* logData = (char*)0x20011000</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

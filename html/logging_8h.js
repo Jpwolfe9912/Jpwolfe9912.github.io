@@ -1,5 +1,6 @@
 var logging_8h =
 [
+    [ "LOG_SIZE", "logging_8h.html#a609a6de2c7ff0a69b55d3b3c5e260cc5", null ],
     [ "logs_t", "logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3", [
       [ "ROLL_LOG", "logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3af134deba5ad2210923f25a86d13fa5f7", null ],
       [ "PITCH_LOG", "logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3a62f12a2e62d52cb8d7203ba6da1d1b1c", null ],

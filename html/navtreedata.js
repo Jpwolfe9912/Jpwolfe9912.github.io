@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "Autodrone32", "index.html", [
+  [ "Autodrone", "index.html", [
     [ "Modules", "modules.html", "modules" ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
@@ -52,10 +52,10 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_autodrone32_8h.html",
-"drv__led_8h.html#a6748a3f50afb0e4a50b7f3d2066faf69",
-"globals_func.html",
-"motors_8h.html#aa2badb8e8b9c552183fea6d14465a131ac2c9bd491f7a8d8d0ebe980e2f0f52b6",
-"stm32f7xx__hal__conf_8h.html#a99be773f7f62b6277d1c87658e085725"
+"drv__lwrb_8c.html#ae6b44b4e80efd02f69db0693bf049a69",
+"globals_func_m.html",
+"mpu6000_8c.html#a3f0591e6aaa96e6766fc44658aec4647",
+"stm32f7xx__hal__conf_8h.html#ace209074499dbef0b97300da5bd7c707"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

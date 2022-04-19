@@ -9,6 +9,5 @@ var process__commands_8h =
     [ "disarmingTimer", "process__commands_8h.html#abaaaab74a851da13a44ccd63988196cc", null ],
     [ "mode", "process__commands_8h.html#abdda914a8c6ac0445832f7dbf4f37286", null ],
     [ "previousCommandInDetent", "process__commands_8h.html#afba620164d81adc771510752f70e7cc8", null ],
-    [ "rxCommand", "process__commands_8h.html#ae767c84bb0f764c266954094c2869142", null ],
     [ "rxCommands", "process__commands_8h.html#a1e10050fd5b2a267659f25847d7beb59", null ]
 ];
