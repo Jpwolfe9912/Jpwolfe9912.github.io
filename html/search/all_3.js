@@ -11,7 +11,7 @@ var searchData=
   ['compute_5faxis_5fcommands_2ec_8',['compute_axis_commands.c',['../compute__axis__commands_8c.html',1,'']]],
   ['compute_5faxis_5fcommands_2eh_9',['compute_axis_commands.h',['../compute__axis__commands_8h.html',1,'']]],
   ['computeangles_10',['computeAngles',['../madgwick_8c.html#a7b14436407f3a952572f288543075e4d',1,'computeAngles(void):&#160;madgwick.c'],['../madgwick_8h.html#a7b14436407f3a952572f288543075e4d',1,'computeAngles(void):&#160;madgwick.c']]],
-  ['computeaxiscommands_11',['computeAxisCommands',['../compute__axis__commands_8h.html#a6ea978441fb2878a2926d7009c903962',1,'computeAxisCommands(float dt):&#160;compute_axis_commands.c'],['../compute__axis__commands_8c.html#a6ea978441fb2878a2926d7009c903962',1,'computeAxisCommands(float dt):&#160;compute_axis_commands.c']]],
+  ['computeaxiscommands_11',['computeAxisCommands',['../compute__axis__commands_8c.html#a6ea978441fb2878a2926d7009c903962',1,'computeAxisCommands(float dt):&#160;compute_axis_commands.c'],['../compute__axis__commands_8h.html#a6ea978441fb2878a2926d7009c903962',1,'computeAxisCommands(float dt):&#160;compute_axis_commands.c']]],
   ['computempu6000rtdata_12',['computeMPU6000RTData',['../mpu6000_8h.html#acb7732c2d9d2c63ad23af99706e5941d',1,'computeMPU6000RTData(void):&#160;mpu6000.c'],['../mpu6000_8c.html#acb7732c2d9d2c63ad23af99706e5941d',1,'computeMPU6000RTData(void):&#160;mpu6000.c']]],
   ['computempu6000tcbias_13',['computeMPU6000TCBias',['../mpu6000_8c.html#a09f05343283ca43390d2bd303416ac02',1,'computeMPU6000TCBias(void):&#160;mpu6000.c'],['../mpu6000_8h.html#a09f05343283ca43390d2bd303416ac02',1,'computeMPU6000TCBias(void):&#160;mpu6000.c']]],
   ['computerotations500hz_14',['computeRotations500Hz',['../rotations_8c.html#a4adc96eb39842aa957a90bfd4ad2dfe9',1,'computeRotations500Hz(void):&#160;rotations.c'],['../rotations_8h.html#a4adc96eb39842aa957a90bfd4ad2dfe9',1,'computeRotations500Hz(void):&#160;rotations.c']]],
@@ -27,8 +27,9 @@ var searchData=
   ['count_5f50hz_24',['COUNT_50HZ',['../drv__system_8h.html#a4adc0875bc3d641329c65cbbf392332a',1,'drv_system.h']]],
   ['count_5f5hz_25',['COUNT_5HZ',['../drv__system_8h.html#aa1776adb0a0550755eae7c1d88082d48',1,'drv_system.h']]],
   ['crc32beeprom_26',['crc32bEEPROM',['../config_8h.html#abb54b6c03c4ecca3c9cf43638135a884',1,'config.h']]],
-  ['crc_5fhistorybad_27',['CRC_HistoryBad',['../_autodrone32_8h.html#ad1575f9c73c6a8a82ada376fe68b3adaa49adcd1dfec4a4d9dc0d30f34af644f9',1,'Autodrone32.h']]],
+  ['crc_5fhistorybad_27',['CRC_HistoryBad',['../autodrone32_8h.html#ad1575f9c73c6a8a82ada376fe68b3adaa49adcd1dfec4a4d9dc0d30f34af644f9',1,'autodrone32.h']]],
   ['crc_5fsize_28',['CRC_SIZE',['../ibus_8h.html#aa93e89217587fdff12bf43b5d7f54f74',1,'ibus.h']]],
-  ['crcflags_29',['crcFlags',['../_autodrone32_8h.html#ad1575f9c73c6a8a82ada376fe68b3ada',1,'Autodrone32.h']]],
-  ['cyan_30',['CYAN',['../drv__color_8h.html#a0a204139fa728b63f637526a181ca979aafe71cad474c15ce63b300c470eef8cc',1,'drv_color.h']]]
+  ['crcflags_29',['crcFlags',['../autodrone32_8h.html#ad1575f9c73c6a8a82ada376fe68b3ada',1,'autodrone32.h']]],
+  ['cube_30',['CUBE',['../autodrone32_8h.html#aac87e1a9729d6d21d61364175058d4ee',1,'autodrone32.h']]],
+  ['cyan_31',['CYAN',['../drv__color_8h.html#a0a204139fa728b63f637526a181ca979aafe71cad474c15ce63b300c470eef8cc',1,'drv_color.h']]]
 ];

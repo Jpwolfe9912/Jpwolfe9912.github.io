@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['d2r_0',['D2R',['../_autodrone32_8h.html#a0a3cc1d5cde549e408f825ddd7f5853d',1,'Autodrone32.h']]],
+  ['d2r_0',['D2R',['../autodrone32_8h.html#a0a3cc1d5cde549e408f825ddd7f5853d',1,'autodrone32.h']]],
   ['deadband_1',['DEADBAND',['../process__commands_8h.html#a196c194bd32527a119ac607d3b2330b6',1,'process_commands.h']]],
   ['deadband_5fslope_2',['DEADBAND_SLOPE',['../process__commands_8h.html#aff2db53de34ab9f0f712f2cdef478882',1,'process_commands.h']]],
   ['disable_5fmpu6000_3',['DISABLE_MPU6000',['../mpu6000_8h.html#a51e6f11d0ca0b59abc3203297edb38a8',1,'mpu6000.h']]],

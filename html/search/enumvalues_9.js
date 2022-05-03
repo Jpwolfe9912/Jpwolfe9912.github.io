@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['pitch_5flog_0',['PITCH_LOG',['../logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3a62f12a2e62d52cb8d7203ba6da1d1b1c',1,'logging.h']]],
-  ['purple_1',['PURPLE',['../drv__color_8h.html#a0a204139fa728b63f637526a181ca979a2772ad7cd64f03c2aed60f91c69fa69d',1,'drv_color.h']]]
+  ['no_0',['NO',['../drv__color_8h.html#a3754b48ed3011b2b338eb948daa47cd7a0d077f5b932ce05e5b9f30c6087a2f31',1,'drv_color.h']]],
+  ['no_5fbatt_1',['NO_BATT',['../battery_8h.html#a065db3c6827b30adb091f74d479ed862a5aae27054572160c56fe3ae2aea1745a',1,'battery.h']]]
 ];

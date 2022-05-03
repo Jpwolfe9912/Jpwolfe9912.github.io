@@ -7,5 +7,6 @@ var searchData=
   ['count_5f500hz_4',['COUNT_500HZ',['../drv__system_8h.html#ac7dd88805f6ac024cb6af88bbcb6237f',1,'drv_system.h']]],
   ['count_5f50hz_5',['COUNT_50HZ',['../drv__system_8h.html#a4adc0875bc3d641329c65cbbf392332a',1,'drv_system.h']]],
   ['count_5f5hz_6',['COUNT_5HZ',['../drv__system_8h.html#aa1776adb0a0550755eae7c1d88082d48',1,'drv_system.h']]],
-  ['crc_5fsize_7',['CRC_SIZE',['../ibus_8h.html#aa93e89217587fdff12bf43b5d7f54f74',1,'ibus.h']]]
+  ['crc_5fsize_7',['CRC_SIZE',['../ibus_8h.html#aa93e89217587fdff12bf43b5d7f54f74',1,'ibus.h']]],
+  ['cube_8',['CUBE',['../autodrone32_8h.html#aac87e1a9729d6d21d61364175058d4ee',1,'autodrone32.h']]]
 ];

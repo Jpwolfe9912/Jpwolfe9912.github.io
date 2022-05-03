@@ -1,5 +1,6 @@
 var compute__axis__commands_8h =
 [
+    [ "RATECURVE", "compute__axis__commands_8h.html#a7645140c477029aded5616373e3316c4", null ],
     [ "computeAxisCommands", "compute__axis__commands_8h.html#a6ea978441fb2878a2926d7009c903962", null ],
     [ "attCmd", "compute__axis__commands_8h.html#aa2d7eed0bc462ac7393d0def9c484b5e", null ],
     [ "attPID", "compute__axis__commands_8h.html#ab07bd323d95ccecc4ad892c23b921712", null ],

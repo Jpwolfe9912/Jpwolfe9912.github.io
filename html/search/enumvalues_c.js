@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['three_0',['THREE',['../battery_8h.html#a065db3c6827b30adb091f74d479ed862a1251fbf93888ad32fe0ae54d49bcef17',1,'battery.h']]],
-  ['trans_5fflight_1',['TRANS_FLIGHT',['../_autodrone32_8h.html#ada81cad6f64bf0042dba36096bf32710a8ff0f0e920a26f5210452e85eabc54d3',1,'Autodrone32.h']]],
-  ['trans_5frover_2',['TRANS_ROVER',['../_autodrone32_8h.html#ada81cad6f64bf0042dba36096bf32710a8dc5461871ae730fcc0b532526747d60',1,'Autodrone32.h']]]
+  ['sensors_5flog_0',['SENSORS_LOG',['../logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3a7a9593bf59da01168fd0b156a1a43826',1,'logging.h']]],
+  ['six_1',['SIX',['../battery_8h.html#a065db3c6827b30adb091f74d479ed862aadffddd32c3e7497e32cd7e430c9c106',1,'battery.h']]]
 ];

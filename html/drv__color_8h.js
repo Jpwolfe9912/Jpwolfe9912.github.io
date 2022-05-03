@@ -15,5 +15,6 @@ var drv__color_8h =
       [ "WHITE", "drv__color_8h.html#a0a204139fa728b63f637526a181ca979a283fc479650da98250635b9c3c0e7e50", null ]
     ] ],
     [ "color", "drv__color_8h.html#a46be05f812453cc1db381991d9591445", null ],
-    [ "colorDefault", "drv__color_8h.html#aa926233cbec85dc0871fdf95d7406dbe", null ]
+    [ "colorDefault", "drv__color_8h.html#aa926233cbec85dc0871fdf95d7406dbe", null ],
+    [ "drawAutodrone", "drv__color_8h.html#ad763d56572a9efa799dbbeffc4ba7d56", null ]
 ];

@@ -3,7 +3,7 @@ var dir_212d1fa3f62a36ac3742badce8b0173c =
     [ "drv", "dir_10e0304ec104feec7862f4fa7fe2f1e8.html", "dir_10e0304ec104feec7862f4fa7fe2f1e8" ],
     [ "motion", "dir_e8bc06084b34115148cadd83e13467d4.html", "dir_e8bc06084b34115148cadd83e13467d4" ],
     [ "sensors", "dir_6e686e89e4b2b2da60382d775c172df3.html", "dir_6e686e89e4b2b2da60382d775c172df3" ],
-    [ "Autodrone32.h", "_autodrone32_8h.html", "_autodrone32_8h" ],
+    [ "autodrone32.h", "autodrone32_8h.html", "autodrone32_8h" ],
     [ "battery.c", "battery_8c.html", "battery_8c" ],
     [ "battery.h", "battery_8h.html", "battery_8h" ],
     [ "board.h", "board_8h.html", null ],

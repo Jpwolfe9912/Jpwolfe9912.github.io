@@ -6,8 +6,8 @@ var indexSectionsWithContent =
   3: "_abcdehilmnoprstuwz",
   4: "abcdefgiklmnpqrstvwy",
   5: "eps",
-  6: "bcdilm",
-  7: "bcdefgimnprstwy",
+  6: "bcdfilm",
+  7: "abcdefgimnprstwy",
   8: "abcdefghiklmnoprstuvwxyz",
   9: "cs"
 };

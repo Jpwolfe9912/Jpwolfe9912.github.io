@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['logs_5ft_0',['logs_t',['../logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3',1,'logging.h']]]
+  ['ibusstatus_5fe_0',['ibusStatus_e',['../ibus_8h.html#a5a62ceacfdb82fe56aba16e8387b8570',1,'ibus.h']]]
 ];

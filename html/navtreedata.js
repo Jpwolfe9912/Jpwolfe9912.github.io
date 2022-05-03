@@ -51,11 +51,11 @@ var NAVTREE =
 
 var NAVTREEINDEX =
 [
-"_autodrone32_8h.html",
-"drv__serial_8c.html#a0523c05685d59544dca911cb6a3db77d",
-"globals_h.html",
-"mpu6000_8h.html#a3703bea6c3dd2f6e2ab8200abc4fc7f6",
-"struct_p_i_ddata.html#a20b0b760015183d681bbfde52d94459e"
+"accel__calibration__mpu_8c.html",
+"drv__led_8h_source.html",
+"globals_func_r.html",
+"mpu6000_8h.html#a24f1f05ca6ded48a1da236c913be2068",
+"stm32f7xx__it_8h.html#a2bffc10d5bd4106753b7c30e86903bea"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

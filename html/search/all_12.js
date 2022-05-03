@@ -1,11 +1,11 @@
 var searchData=
 [
   ['samplefreqdef_0',['sampleFreqDef',['../madgwick_8h.html#a7cd0e552113fbeccd2434218d28e4522',1,'madgwick.h']]],
-  ['semaphore_5ft_1',['semaphore_t',['../_autodrone32_8h.html#a3d5a901a753342ccfc67d9706af13165',1,'Autodrone32.h']]],
+  ['semaphore_5ft_1',['semaphore_t',['../autodrone32_8h.html#a3d5a901a753342ccfc67d9706af13165',1,'autodrone32.h']]],
   ['sensororientation_2',['sensorOrientation',['../structeeprom_config__t.html#aace15d3b6ae9cf2b845a8583349c2138',1,'eepromConfig_t']]],
-  ['sensors_3',['sensors',['../_autodrone32_8h.html#ae98e6f5c865af95578862f633a30b769',1,'Autodrone32.h']]],
+  ['sensors_3',['sensors',['../autodrone32_8h.html#ae98e6f5c865af95578862f633a30b769',1,'autodrone32.h']]],
   ['sensors_5flog_4',['SENSORS_LOG',['../logging_8h.html#a3d37bb864e1a8acc5ee978f4cf398ab3a7a9593bf59da01168fd0b156a1a43826',1,'logging.h']]],
-  ['sensors_5ft_5',['sensors_t',['../structsensors__t.html',1,'sensors_t'],['../_autodrone32_8h.html#aa99cac3fe965603ac31b3250b69e263a',1,'sensors_t():&#160;Autodrone32.h']]],
+  ['sensors_5ft_5',['sensors_t',['../structsensors__t.html',1,'sensors_t'],['../autodrone32_8h.html#aa99cac3fe965603ac31b3250b69e263a',1,'sensors_t():&#160;autodrone32.h']]],
   ['serialbuf_6',['serialBuf',['../drv__serial_8c.html#adf6a40d3bfdb2da8fda14ccc9a1b47f0',1,'drv_serial.c']]],
   ['serialindex_7',['serialIndex',['../drv__serial_8c.html#a979a9dbe0a917dc24da2e917f2281898',1,'drv_serial.c']]],
   ['serialinit_8',['serialInit',['../drv__serial_8h.html#a0c569386540e18af22f2d8c74e4f22c3',1,'drv_serial.h']]],
@@ -30,7 +30,7 @@ var searchData=
   ['spi2writeonebyte_27',['spi2WriteOneByte',['../drv__spi2_8c.html#af861d2c1861406d8363bb9f5987ab2ef',1,'spi2WriteOneByte(uint8_t reg, uint8_t data):&#160;drv_spi2.c'],['../drv__spi2_8h.html#af861d2c1861406d8363bb9f5987ab2ef',1,'spi2WriteOneByte(uint8_t reg, uint8_t data):&#160;drv_spi2.c']]],
   ['spi_5fbr_5fprescaler_5f128_28',['SPI_BR_PRESCALER_128',['../drv__spi1_8h.html#a1e6f0af65653e4941210f2ebf6e96df6',1,'SPI_BR_PRESCALER_128():&#160;drv_spi1.h'],['../drv__spi2_8h.html#a1e6f0af65653e4941210f2ebf6e96df6',1,'SPI_BR_PRESCALER_128():&#160;drv_spi2.h']]],
   ['spi_5fbr_5fprescaler_5f16_29',['SPI_BR_PRESCALER_16',['../drv__spi1_8h.html#ad0b1b31708f069aa075fe2f2b899babf',1,'SPI_BR_PRESCALER_16():&#160;drv_spi1.h'],['../drv__spi2_8h.html#ad0b1b31708f069aa075fe2f2b899babf',1,'SPI_BR_PRESCALER_16():&#160;drv_spi2.h']]],
-  ['sqr_30',['SQR',['../_autodrone32_8h.html#aa7866fa5e4e0ee9b034e9dab6599a9cc',1,'Autodrone32.h']]],
+  ['sqr_30',['SQR',['../autodrone32_8h.html#aa7866fa5e4e0ee9b034e9dab6599a9cc',1,'autodrone32.h']]],
   ['standardradianformat_31',['standardRadianFormat',['../utilities_8c.html#a3eb5c7ac4a35ae17b26f4b67eec87eaf',1,'standardRadianFormat(float angle):&#160;utilities.c'],['../utilities_8h.html#a3eb5c7ac4a35ae17b26f4b67eec87eaf',1,'standardRadianFormat(float angle):&#160;utilities.c']]],
   ['state_32',['state',['../ibus_8c.html#a0b57aa10271a66f3dc936bba1d2f3830',1,'ibus.c']]],
   ['status_33',['status',['../ibus_8c.html#a2cc3a1395706a276ba8a808b6f72e5c0',1,'ibus.c']]],

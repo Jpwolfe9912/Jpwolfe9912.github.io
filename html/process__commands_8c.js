@@ -5,6 +5,7 @@ var process__commands_8c =
     [ "armingTimer", "process__commands_8c.html#aa17cd4729b354f25c53300d973288213", null ],
     [ "commandInDetent", "process__commands_8c.html#aa7ec4b36be7336ea09ed4944e3029c78", null ],
     [ "disarmingTimer", "process__commands_8c.html#abaaaab74a851da13a44ccd63988196cc", null ],
+    [ "flightMode", "process__commands_8c.html#a0418d4c919c13a7a007b41a616f6155a", null ],
     [ "mode", "process__commands_8c.html#abdda914a8c6ac0445832f7dbf4f37286", null ],
     [ "previousCommandInDetent", "process__commands_8c.html#afba620164d81adc771510752f70e7cc8", null ],
     [ "rxCommands", "process__commands_8c.html#a1e10050fd5b2a267659f25847d7beb59", null ]

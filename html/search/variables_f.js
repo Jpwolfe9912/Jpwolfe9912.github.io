@@ -1,7 +1,7 @@
 var searchData=
 [
   ['sensororientation_0',['sensorOrientation',['../structeeprom_config__t.html#aace15d3b6ae9cf2b845a8583349c2138',1,'eepromConfig_t']]],
-  ['sensors_1',['sensors',['../_autodrone32_8h.html#ae98e6f5c865af95578862f633a30b769',1,'Autodrone32.h']]],
+  ['sensors_1',['sensors',['../autodrone32_8h.html#ae98e6f5c865af95578862f633a30b769',1,'autodrone32.h']]],
   ['serialbuf_2',['serialBuf',['../drv__serial_8c.html#adf6a40d3bfdb2da8fda14ccc9a1b47f0',1,'drv_serial.c']]],
   ['serialindex_3',['serialIndex',['../drv__serial_8c.html#a979a9dbe0a917dc24da2e917f2281898',1,'drv_serial.c']]],
   ['speedcmd_4',['speedCmd',['../mixer_8c.html#aec1157580d2f27f5049e0093c2b1a84e',1,'speedCmd():&#160;mixer.c'],['../mixer_8h.html#aec1157580d2f27f5049e0093c2b1a84e',1,'speedCmd():&#160;mixer.h']]],
